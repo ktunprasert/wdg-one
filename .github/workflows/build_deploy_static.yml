@@ -67,7 +67,7 @@ jobs:
       - name: Deploy to Organization's GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          deploy_key: ${{ secrets.PAGES_DEPLOY_KEY }}
           publish_dir: apps/serum_static/site
           external_repository: wdg-one/wdg-one.github.io # specify the target repo
           publish_branch: main # or master, depending on your setup
